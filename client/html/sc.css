@@ -1,0 +1,154 @@
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: inherit !important;
+    color: #fff;
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    user-select: none;
+    padding: 10px 10px;
+    /* display: none; */
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('https://cdn.discordapp.com/attachments/423974115653976065/679505407567331328/Screenshot_3_copia.png'); */
+}
+
+.sc-center-itens {
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%,-50%);
+    position: fixed;
+    background: #000000ad;
+    border-radius: 1rem;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    width: 63%;
+    height: 55vh;
+    flex-direction: column;
+}
+
+.sc-container-itens {
+    max-width: 95%;
+    height: 52vh;
+    margin-top: 16px;
+    border-radius: 12px;
+    overflow: auto;
+    display: inline-grid;
+    column-gap: 0.6rem;
+    margin-bottom: 10px;
+    row-gap: 17px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.sc-vestir {
+    width: 100%;
+    padding: .4rem;
+    border: 0;
+    border-radius: 6px;
+    outline: none;
+    transition: ease-in all .1s;
+    cursor: pointer;
+    
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    /* margin-left: 25px; */
+}
+
+.hover{
+    background: rgb(137, 43, 231);
+}
+.hover:hover{
+    transform: scale(1.1);
+
+}
+
+.sc-tirar{
+    width: 15%;
+    padding: .4rem;
+    border: 0;
+    border-radius: 6px;
+    outline: none;
+    transition: ease-in all .1s;
+    cursor: pointer;
+    background: rgb(137, 43, 231);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.sc-tirar:hover{
+    transform: scale(1.1);
+}
+
+/* .sc-box-clothes {
+    padding: 0 20px 10px 20px;
+    transition: ease-in all .2s;
+    background: #2c2c2c9e;
+    height: 100%;
+} */
+
+
+.sc-box-clothes {
+    padding: 0 20px 10px 20px;
+    transition: ease-in all .2s;
+    background: #2c2c2c9e;
+    height: 65%;
+    display: inline-block;
+}
+
+.sc-box-clothes:hover,
+.sc-box-clothes.active {
+    background: rgba(128, 128, 128, 0.185);
+}
+
+.sc-title{
+    position: fixed;
+    top: 138px;
+    font-size: 21px;
+    font-weight: 500;
+    text-transform: uppercase;
+    left: 415px;
+    text-shadow: 0 1px 5px rgb(255, 255, 255);
+}
+
+.sc-image {
+    width: 100%;
+    border-radius: 6px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sc-just-text{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sc-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: initial; */
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.sc-button-vestir{
+    
+    width: 15%;
+    margin-right: 12px;
+}
+::-webkit-scrollbar {
+    display: none;
+ }
